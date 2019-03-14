@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planets Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h3 class="text-center">Planets Table</h3>
+    <table>
+        <div class="filter-container">
+            <label>Show</label>
+            <select class="filter" name="show">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+            </select>
+        </div>
+        <thead>
+            <tr>
+                <th>Name <i class="sort" data-sort="name">▼</i></th>
+                <th>Rotation Period<i class="sort" data-sort="rotation">▼</i></th>
+                <th>Orbital Period<i class="sort" data-sort="orbital">▼</i></th>
+                <th>Diameter<i class="sort" data-sort="diameter">▼</i></th>
+                <th>Terrain<i class="sort" data-sort="terrain">▼</i></th>
+                <th>Population<i class="sort" data-sort="population">▼</i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="loader-container">
+                <td colspan="6"><div class="loader"></div></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
